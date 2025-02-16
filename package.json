@@ -1,0 +1,66 @@
+{
+  "name": "@ernesto248/react-debug-board",
+  "version": "0.1.0",
+  "description": "A customizable debug console component for React applications",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "prepare": "npm run build",
+    "lint": "eslint src --ext .ts,.tsx",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "framer-motion": ">=4.0.0",
+    "react-icons": ">=4.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.6.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/uuid": "^9.0.7",
+    "framer-motion": "^10.16.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
+    "rollup": "^4.3.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "typescript": "^5.2.2"
+  },
+  "keywords": [
+    "react",
+    "debug",
+    "console",
+    "development",
+    "logging",
+    "debugger",
+    "developer-tools"
+  ],
+  "author": "Ernesto Leonard",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ernesto248/debug-board.git"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
