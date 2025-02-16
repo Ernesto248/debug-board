@@ -2,8 +2,8 @@
 
 A customizable debug console component for React applications that automatically captures all console logs.
 
-![Version](https://img.shields.io/npm/v/@react-debug-board)
-![License](https://img.shields.io/npm/l/@react-debug-board)
+![Version](https://img.shields.io/npm/v/@ernesto248/react-debug-board)
+![License](https://img.shields.io/npm/l/@ernesto248/react-debug-board)
 
 ## Features
 
