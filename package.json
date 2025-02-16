@@ -1,6 +1,6 @@
 {
   "name": "@ernesto248/react-debug-board",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A customizable debug console component for React applications",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
