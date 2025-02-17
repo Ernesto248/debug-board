@@ -187,17 +187,17 @@ var BoardHeader = function (_a) {
             React.createElement("button", { onClick: function (e) {
                     e.stopPropagation();
                     onToggleStack();
-                }, className: "p-1 hover:bg-gray-700 rounded cursor-pointer", title: "Toggle Stack Trace" },
+                }, className: "p-1 rounded cursor-pointer hover:bg-gray-700", title: "Toggle Stack Trace" },
                 React.createElement(MdStackedLineChart, { size: 16 })),
             React.createElement("button", { onClick: function (e) {
                     e.stopPropagation();
                     onClear();
-                }, className: "p-1 hover:bg-gray-700 rounded text-red-400 cursor-pointer", title: "Clear Logs" },
+                }, className: "p-1 text-red-400 rounded cursor-pointer hover:bg-gray-700", title: "Clear Logs" },
                 React.createElement(MdClearAll, { size: 16 })),
             React.createElement("button", { onClick: function (e) {
                     e.stopPropagation();
                     onToggleMinimize();
-                }, className: "p-1 hover:bg-gray-700 rounded cursor-pointer", title: "Minimize" },
+                }, className: "p-1 rounded cursor-pointer hover:bg-gray-700", title: "Minimize" },
                 React.createElement(MdExpandMore, { size: 16 })))) : (React.createElement("div", { className: "flex items-center gap-2" },
             React.createElement(MdExpandLess, { size: 16 })))));
 };

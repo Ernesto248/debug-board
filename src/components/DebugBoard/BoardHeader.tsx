@@ -43,7 +43,7 @@ export const BoardHeader = ({
             e.stopPropagation();
             onToggleStack();
           }}
-          className="p-1 hover:bg-gray-700 rounded cursor-pointer"
+          className="p-1 rounded cursor-pointer hover:bg-gray-700"
           title="Toggle Stack Trace"
         >
           <MdStackedLineChart size={16} />
@@ -53,7 +53,7 @@ export const BoardHeader = ({
             e.stopPropagation();
             onClear();
           }}
-          className="p-1 hover:bg-gray-700 rounded text-red-400 cursor-pointer"
+          className="p-1 text-red-400 rounded cursor-pointer hover:bg-gray-700"
           title="Clear Logs"
         >
           <MdClearAll size={16} />
@@ -63,7 +63,7 @@ export const BoardHeader = ({
             e.stopPropagation();
             onToggleMinimize();
           }}
-          className="p-1 hover:bg-gray-700 rounded cursor-pointer"
+          className="p-1 rounded cursor-pointer hover:bg-gray-700"
           title="Minimize"
         >
           <MdExpandMore size={16} />

@@ -1,0 +1,18 @@
+/* Estilos específicos para el componente */
+.debug-board-root {
+  @apply fixed bottom-4 right-4 bg-gray-900 text-white rounded-lg shadow-lg overflow-hidden;
+}
+
+.debug-board-minimized {
+  @apply hover:bg-gray-800 transition-colors duration-200;
+}
+
+.debug-board-header {
+  @apply p-3 flex items-center justify-between border-b border-gray-700;
+}
+
+.debug-board-logs {
+  @apply space-y-2 p-3 overflow-y-auto max-h-[400px];
+}
+
+/* ...más clases específicas para el componente... */

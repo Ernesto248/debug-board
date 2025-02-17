@@ -14,12 +14,12 @@ export default [
     input: "src/index.ts",
     output: [
       {
-        file: "dist/cjs/index.js",
+        file: packageJson.main,
         format: "cjs",
         sourcemap: true,
       },
       {
-        file: "dist/esm/index.js",
+        file: packageJson.module,
         format: "esm",
         sourcemap: true,
       },
@@ -28,16 +28,15 @@ export default [
       peerDepsExternal(),
       resolve(),
       commonjs(),
-      typescript({
-        tsconfig: "./tsconfig.json",
-        exclude: ["**/*.stories.tsx", "**/*.test.tsx"],
-      }),
+      typescript({ tsconfig: "./tsconfig.json" }),
       postcss({
-        config: false,
+        config: "./postcss.config.cjs",
+        extensions: [".css"],
         minimize: true,
         inject: {
           insertAt: "top",
         },
+        extract: "styles.css",
       }),
     ],
     external: ["react", "react-dom", "framer-motion", "react-icons"],

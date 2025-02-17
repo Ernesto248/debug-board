@@ -18,31 +18,23 @@ A customizable debug console component for React applications that automatically
 ## Installation
 
 ```bash
-npm install @react-debug-board
-# or
-yarn add @react-debug-board
-# or
-pnpm add @react-debug-board
+npm install @ernesto248/react-debug-board
 ```
 
-## Quick Start
+## Usage
 
 ```jsx
-import { DebugBoard } from "@ernestoleonard/react-debug-board";
+// Import both the component and styles
+import { DebugBoard } from "@ernesto248/react-debug-board";
+import "@ernesto248/react-debug-board/dist/styles.css";
 
 function App() {
   return (
-    <div>
-      {/* Just add the DebugBoard component and it will automatically capture all console logs */}
+    <div className="debug-board">
       <DebugBoard />
     </div>
   );
 }
-
-// Anywhere in your app:
-console.log("This will be captured!");
-console.warn("This warning too!");
-console.error("Errors with stack trace!");
 ```
 
 ## API Reference
