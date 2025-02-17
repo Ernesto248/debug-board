@@ -33,10 +33,8 @@ export default [
         config: "./postcss.config.cjs",
         extensions: [".css"],
         minimize: true,
-        inject: {
-          insertAt: "top",
-        },
-        extract: "styles.css",
+        inject: false, // Cambiar a false para no inyectar el CSS
+        extract: "dist/styles.css", // Ruta específica en dist
       }),
     ],
     external: ["react", "react-dom", "framer-motion", "react-icons"],

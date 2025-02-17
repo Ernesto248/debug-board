@@ -26,7 +26,7 @@ npm install @ernesto248/react-debug-board
 ```jsx
 // Import both the component and styles
 import { DebugBoard } from "@ernesto248/react-debug-board";
-import "@ernesto248/react-debug-board/dist/styles.css";
+import "@ernesto248/react-debug-board/styles.css"; // Ruta actualizada
 
 function App() {
   return (
